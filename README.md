@@ -9,4 +9,5 @@
 
 ![imageBrowser](https://github.com/fangjinfeng/FJImageBrowser/blob/master/FJImageBrowserDemo/Snapshots/imageBrowser.gif)
 
-**备注:跟微信效果类似**
+使用方法:
+
