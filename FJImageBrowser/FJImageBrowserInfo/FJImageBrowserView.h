@@ -50,7 +50,7 @@
 @property (nonatomic, assign) BOOL isHidesOriginal;
 
 /**
- 是否需要隐藏原始的imageView
+ 是否禁止 滑动手势
  */
 @property (nonatomic, assign) BOOL isBanPanGesture;
 
@@ -75,14 +75,14 @@
 @property (nonatomic, copy, nonnull) NSMutableArray  <FJImageModel *>*photoModeArray;
 
 /**
- 选中第几张
+ 浏览 显示 模式
  */
 @property (nonatomic, assign) FJPhotoViewShowType photoBrowserType;
 
 /**
- 显示 模式
+ 委托
  */
-@property (nonatomic, weak) id <FJImageBrowserViewDelegate> photoBrowserDelegate;
+@property (nonatomic, weak) _Nullable id  <FJImageBrowserViewDelegate> photoBrowserDelegate;
 
 
 /**

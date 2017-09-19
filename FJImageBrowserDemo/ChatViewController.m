@@ -12,10 +12,9 @@
 #import "ChatViewController.h"
 #import "ChatTableViewCell.h"
 
-@interface ChatViewController () <UITableViewDelegate, UITableViewDataSource>
-@property (nonatomic, strong) UITableView *tableView;
+@interface ChatViewController () <UITableViewDelegate, UITableViewDataSource, FJImageBrowserViewDelegate>
 
-@property (nonatomic, strong) NSMutableArray * imageModels;
+@property (nonatomic, strong) UITableView *tableView;
 
 @property (nonatomic, strong) NSArray *bigImageArray;
 
@@ -30,7 +29,6 @@
     
     [self setupControls];
 
-    [self setupDataInfo];
 }
 
 #pragma mark --- private mthod
@@ -44,19 +42,6 @@
     [self.view addSubview:self.tableView];
 }
 
-// 设置 数据源
-- (void)setupDataInfo {
-    self.imageModels = [NSMutableArray array];
-    
-    // *************************绑定JKPhotoModel*********************************
-    
-    [self.bigImageArray enumerateObjectsUsingBlock:^(NSString *imageUrl, NSUInteger idx, BOOL * _Nonnull stop) {
-        
-        FJImageModel * photoModel = [[FJImageModel alloc] init];
-        photoModel.imageInfo = imageUrl;
-        [self.imageModels addObject:photoModel];
-    }];
-}
 
 
 #pragma mark --- system delegate
@@ -77,8 +62,7 @@ NSString * const JKChatCellKey = @"JKChatCellKey";
     }
     [cell configueCellWithImageUrl:self.bigImageArray[indexPath.row] indexPath:indexPath];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    FJImageModel * photoModel = self.imageModels[indexPath.row];
-    photoModel.imageView = cell.imgView;
+
     return cell;
 }
 
@@ -90,8 +74,9 @@ NSString * const JKChatCellKey = @"JKChatCellKey";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
     FJImageBrowserView *photosView = [[FJImageBrowserView alloc] init];
-    photosView.photoModeArray = self.imageModels;
+    photosView.photoDataArray = self.bigImageArray;
     photosView.selectedIndex = indexPath.row;
+    photosView.photoBrowserDelegate = self;
     [photosView showPhotoBrowser];
 
 }
@@ -100,16 +85,24 @@ NSString * const JKChatCellKey = @"JKChatCellKey";
 /************************************* PhotosViewDelegate ***************************************/
 // 返回图片占位小图
 - (UIImageView *)photoBrowser:(FJImageBrowserView *)browser placeholderImageForIndex:(NSInteger)index {
-    
-    FJImageModel * photoModel = self.imageModels[index];
-    return photoModel.imageView;
+    ChatTableViewCell *cell = (ChatTableViewCell *)[self tableView:self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForItem:index inSection:0]];
+    return cell.imgView;
 }
 
 // 返回原图片位置
 - (CGRect)photoBrowser:(FJImageBrowserView *)browser targetRectForIndex:(NSInteger)index {
-    FJImageModel * photoModel = self.imageModels[index];
-      CGRect newImageViewFrame = [photoModel.imageView.superview convertRect:photoModel.imageView.frame toView:[UIApplication sharedApplication].keyWindow];
     
+    NSIndexPath *tmpIndexPath = [NSIndexPath indexPathForItem:index inSection:0];
+    
+     ChatTableViewCell *cell = (ChatTableViewCell *)[self tableView:self.tableView cellForRowAtIndexPath:tmpIndexPath];
+      CGRect newImageViewFrame = [cell.imgView convertRect:cell.imgView.bounds toView:self.view];
+    
+    // 先计算cell的位置,再转化到view中的位置.
+    CGRect rectInTableView = [self.tableView rectForRowAtIndexPath:tmpIndexPath];
+    
+    CGRect rectInSuperView = [self.tableView convertRect:rectInTableView toView:[UIApplication sharedApplication].keyWindow];
+    newImageViewFrame.origin = CGPointMake(newImageViewFrame.origin.x, rectInSuperView.origin.y + 10);
+
     return newImageViewFrame;
 }
 
