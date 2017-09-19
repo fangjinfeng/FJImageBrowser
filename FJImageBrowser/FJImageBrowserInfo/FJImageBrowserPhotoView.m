@@ -132,7 +132,9 @@ static CGFloat const kFJPhotoBrowserCellZoomMinScale = 0.2f;
     [self.presentImageView sd_setImageWithURL:[NSURL URLWithString:imageUrlStr] placeholderImage:self.presentImageView.image options:SDWebImageRetryFailed|SDWebImageLowPriority progress:^(NSInteger receivedSize, NSInteger expectedSize, NSURL * _Nullable targetURL) {
         __strong typeof (self) strongSelf = weakSelf;
         if (strongSelf) {
-            strongSelf.progressLayer.hidden = NO;
+            dispatch_async(dispatch_get_main_queue(), ^{
+                strongSelf.progressLayer.hidden = NO;
+            });
         }
     } completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
         __strong typeof (self) strongSelf = weakSelf;

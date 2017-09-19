@@ -9,6 +9,6 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 
 # ---------------------------------- View ----------------------------------
-pod 'SDWebImage', '~> 4.1.0'
+pod 'SDWebImage', '~> 4.1.0’
 
 end

@@ -73,6 +73,7 @@
 }
 
 
+
 #pragma mark --- private method
 // 添加 屏幕 旋转 通知
 - (void)addOrientationNotiObserver {
@@ -222,6 +223,8 @@
 
 
 #pragma mark --- noti method
+
+
 // 视频 旋转 通知
 - (void)didChangeStatusBarOrientationNotification: (NSNotification*)notify {
 
@@ -256,6 +259,8 @@
         self.isHorizontalScrolling = NO;
     });
 }
+
+
 
 #pragma mark --- response event
 
