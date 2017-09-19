@@ -314,8 +314,8 @@
         _pageControl.hidesForSinglePage = YES;
         _pageControl.frame = CGRectMake(0, [[UIScreen mainScreen] bounds].size.height -40, [[UIScreen mainScreen] bounds].size.width, 40);
         _pageControl.backgroundColor = [UIColor clearColor];
-        _pageControl.pageIndicatorTintColor = [UIColor darkGrayColor];
-        _pageControl.currentPageIndicatorTintColor = [UIColor whiteColor];
+        _pageControl.pageIndicatorTintColor = kFJPageControlIndicatorTintColor;
+        _pageControl.currentPageIndicatorTintColor = kFJPageControlCurrentPageIndicatorTintColor;
         _pageControl.userInteractionEnabled = YES;
         [_pageControl addTarget:self action:@selector(handlePageControlTapAction) forControlEvents:UIControlEventTouchUpInside];
     }

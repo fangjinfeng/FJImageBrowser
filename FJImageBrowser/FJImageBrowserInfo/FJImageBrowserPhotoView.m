@@ -165,7 +165,7 @@ static CGFloat const kFJPhotoBrowserCellZoomMinScale = 0.2f;
     
     if (!self.presentImageView.image) {
         
-        self.presentImageView.image = [UIImage imageNamed:@"default_avatar_geren_134.png"];
+        self.presentImageView.image = [UIImage imageNamed:KFJPhotoBrowserDefaultImage];
     }
     
     self.presentImageView.size = CGSizeMake(imageW, imageH);
@@ -203,7 +203,7 @@ static CGFloat const kFJPhotoBrowserCellZoomMinScale = 0.2f;
             CGFloat ratio = imageW / imageH;
             if (ratio > (screenHeight / screenWidth)) {
                 
-                if (imageH <= screenHeight/2) {
+                if (imageH <= imageW/2) {
                     imageH = screenHeight - 80.0f;
                 }
                 else {
@@ -223,7 +223,7 @@ static CGFloat const kFJPhotoBrowserCellZoomMinScale = 0.2f;
     else {
         imageH = screenHeight;
         imageW = screenWidth;
-        self.presentImageView.image = [UIImage imageNamed:@"default_avatar_geren_134.png"];
+        self.presentImageView.image = [UIImage imageNamed:KFJPhotoBrowserDefaultImage];
     }
     return CGSizeMake(imageW, imageH);
 }
@@ -345,7 +345,7 @@ static CGFloat const kFJPhotoBrowserCellZoomMinScale = 0.2f;
         }
     }
     if (tmpImage == nil) {
-        tmpImage = [UIImage imageNamed:@"default_avatar_geren_134.png"];
+        tmpImage = [UIImage imageNamed:KFJPhotoBrowserDefaultImage];
     }
     return tmpImage;
 }

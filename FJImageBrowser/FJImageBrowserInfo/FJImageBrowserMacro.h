@@ -16,7 +16,14 @@
 // 浏览器 图片 间隔
 #define kFJPhotoBrowserCellHorizotolSpacing  20.0f
 
+// 默认 图片
+#define KFJPhotoBrowserDefaultImage @"default_avatar_geren_134.png"
 
+// 页码 默认 颜色
+#define kFJPageControlIndicatorTintColor [UIColor darkGrayColor]
+
+// 页码 选中 颜色
+#define kFJPageControlCurrentPageIndicatorTintColor [UIColor whiteColor]
 
 // 显示 模式
 typedef NS_ENUM(NSInteger, FJPhotoViewShowType){

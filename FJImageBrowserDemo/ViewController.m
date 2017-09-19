@@ -98,7 +98,7 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     FJCollectionImageViewCell *cell = [FJCollectionImageViewCell cellWithCollectionView:collectionView atIndexPath:indexPath];
-    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:self.smallImageArray[indexPath.row]] placeholderImage:[UIImage imageNamed:@"default_avatar_geren_134.png"]];
+    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:self.smallImageArray[indexPath.row]] placeholderImage:[UIImage imageNamed:KFJPhotoBrowserDefaultImage]];
     
     // *************************绑定cell和imageView*********************************
     
