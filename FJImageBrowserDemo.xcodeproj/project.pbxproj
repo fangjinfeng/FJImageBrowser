@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30883EB51F70C88C00019D3A /* imageBrowser.gif in Resources */ = {isa = PBXBuildFile; fileRef = 30883EB21F70C88C00019D3A /* imageBrowser.gif */; };
+		30883EB61F70C88C00019D3A /* imageBrowserLandscape.gif in Resources */ = {isa = PBXBuildFile; fileRef = 30883EB31F70C88C00019D3A /* imageBrowserLandscape.gif */; };
+		30883EB71F70C88C00019D3A /* imageBrowserPortrait.gif in Resources */ = {isa = PBXBuildFile; fileRef = 30883EB41F70C88C00019D3A /* imageBrowserPortrait.gif */; };
 		309497F91F6FC7B400C565ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 309497F81F6FC7B400C565ED /* main.m */; };
 		309497FC1F6FC7B400C565ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 309497FB1F6FC7B400C565ED /* AppDelegate.m */; };
 		309498021F6FC7B400C565ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 309498001F6FC7B400C565ED /* Main.storyboard */; };
@@ -50,6 +53,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		30883EB21F70C88C00019D3A /* imageBrowser.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = imageBrowser.gif; sourceTree = "<group>"; };
+		30883EB31F70C88C00019D3A /* imageBrowserLandscape.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = imageBrowserLandscape.gif; sourceTree = "<group>"; };
+		30883EB41F70C88C00019D3A /* imageBrowserPortrait.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = imageBrowserPortrait.gif; sourceTree = "<group>"; };
 		309497F41F6FC7B400C565ED /* FJImageBrowserDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FJImageBrowserDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		309497F81F6FC7B400C565ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		309497FA1F6FC7B400C565ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -124,6 +130,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30883EB11F70C88C00019D3A /* Snapshots */ = {
+			isa = PBXGroup;
+			children = (
+				30883EB21F70C88C00019D3A /* imageBrowser.gif */,
+				30883EB31F70C88C00019D3A /* imageBrowserLandscape.gif */,
+				30883EB41F70C88C00019D3A /* imageBrowserPortrait.gif */,
+			);
+			path = Snapshots;
+			sourceTree = "<group>";
+		};
 		309497EB1F6FC7B400C565ED = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +166,7 @@
 		309497F61F6FC7B400C565ED /* FJImageBrowserDemo */ = {
 			isa = PBXGroup;
 			children = (
+				30883EB11F70C88C00019D3A /* Snapshots */,
 				309497FA1F6FC7B400C565ED /* AppDelegate.h */,
 				309497FB1F6FC7B400C565ED /* AppDelegate.m */,
 				309498A81F6FC90E00C565ED /* ViewController.h */,
@@ -379,7 +396,10 @@
 				309498A71F6FC8C100C565ED /* default_avatar_geren_134@3x.png in Resources */,
 				309498041F6FC7B400C565ED /* Assets.xcassets in Resources */,
 				309498A61F6FC8C100C565ED /* default_avatar_geren_134@2x.png in Resources */,
+				30883EB71F70C88C00019D3A /* imageBrowserPortrait.gif in Resources */,
+				30883EB51F70C88C00019D3A /* imageBrowser.gif in Resources */,
 				309498021F6FC7B400C565ED /* Main.storyboard in Resources */,
+				30883EB61F70C88C00019D3A /* imageBrowserLandscape.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
