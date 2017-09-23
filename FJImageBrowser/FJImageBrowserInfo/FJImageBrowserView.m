@@ -282,6 +282,7 @@
             photoModel.imageInfo = obj;
             [self.photoModeArray addObject:photoModel];
         }];
+        self.photoBrowserScrollView.contentSize = CGSizeMake(self.photoBrowserScrollView.width * self.photoModeArray.count, self.view.frame.size.height);
     }
 }
 
