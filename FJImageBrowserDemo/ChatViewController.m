@@ -103,6 +103,9 @@ NSString * const JKChatCellKey = @"JKChatCellKey";
     CGRect rectInSuperView = [self.tableView convertRect:rectInTableView toView:[UIApplication sharedApplication].keyWindow];
     newImageViewFrame.origin = CGPointMake(newImageViewFrame.origin.x, rectInSuperView.origin.y + 10);
 
+    if (newImageViewFrame.origin.y > self.view.height) {
+        newImageViewFrame = CGRectZero;
+    }
     return newImageViewFrame;
 }
 

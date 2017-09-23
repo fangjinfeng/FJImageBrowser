@@ -225,7 +225,7 @@
 #pragma mark --- noti method
 
 
-// 视频 旋转 通知
+// 屏幕 旋转 通知
 - (void)didChangeStatusBarOrientationNotification: (NSNotification*)notify {
 
     self.isHorizontalScrolling = NO;

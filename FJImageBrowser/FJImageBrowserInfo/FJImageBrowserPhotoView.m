@@ -527,17 +527,10 @@ static CGFloat const kFJPhotoBrowserCellZoomMinScale = 0.2f;
 
 /************************ UIGestureRecognizer delegate ***************************/
 
+// 让 scrollView 能够 同时 相应 拖动 和 左右滑动 两种手势
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
     
-    /// 让self.pagGesture 和 collectionView.panGestureRecognizer能够同时响应手势
-    /// 然后在self.pagGesture的响应方法中根据拖拽的方向、角度控制collectionView.panGestureRecognizer.enable
-    /// collectionView.panGestureRecognizer.enable = NO时，self.pagGesture会优先响应拖拽手势
-    
-    if ([otherGestureRecognizer isEqual:[self.parentPhotosView panGestureRecognizer]]) {
-        return YES;
-    }
-    
-    return NO;
+    return YES;
 }
 
 /************************ UIScrollView delegate ***************************/
