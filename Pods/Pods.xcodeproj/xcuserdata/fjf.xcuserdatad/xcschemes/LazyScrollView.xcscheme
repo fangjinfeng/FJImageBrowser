@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'E3DA509592724ABA58E340FAC3DEA0C8'
-               BlueprintName = 'SDWebImage'
+               BlueprintIdentifier = 'D3BB6A0754F0887F0E46F5D8B74FFC8E'
+               BlueprintName = 'LazyScrollView'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'SDWebImage.framework'>
+               BuildableName = 'LazyScrollView.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

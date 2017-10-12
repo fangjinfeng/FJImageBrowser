@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		306E5FE81F8EFC1500012683 /* UIViewController+LifeCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 306E5FE71F8EFC1500012683 /* UIViewController+LifeCircle.m */; };
+		306E5FF01F8F1A4600012683 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 306E5FEC1F8F1A4500012683 /* UIView+Extension.m */; };
+		306E5FF11F8F1A4600012683 /* UIViewController+FJCurrentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 306E5FEF1F8F1A4600012683 /* UIViewController+FJCurrentViewController.m */; };
 		30883EB51F70C88C00019D3A /* imageBrowser.gif in Resources */ = {isa = PBXBuildFile; fileRef = 30883EB21F70C88C00019D3A /* imageBrowser.gif */; };
 		30883EB61F70C88C00019D3A /* imageBrowserLandscape.gif in Resources */ = {isa = PBXBuildFile; fileRef = 30883EB31F70C88C00019D3A /* imageBrowserLandscape.gif */; };
 		30883EB71F70C88C00019D3A /* imageBrowserPortrait.gif in Resources */ = {isa = PBXBuildFile; fileRef = 30883EB41F70C88C00019D3A /* imageBrowserPortrait.gif */; };
@@ -18,8 +20,6 @@
 		309498071F6FC7B400C565ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 309498051F6FC7B400C565ED /* LaunchScreen.storyboard */; };
 		309498121F6FC7B400C565ED /* FJImageBrowserDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 309498111F6FC7B400C565ED /* FJImageBrowserDemoTests.m */; };
 		3094981D1F6FC7B400C565ED /* FJImageBrowserDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3094981C1F6FC7B400C565ED /* FJImageBrowserDemoUITests.m */; };
-		309498831F6FC8C100C565ED /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3094982F1F6FC8C100C565ED /* UIView+Extension.m */; };
-		309498841F6FC8C100C565ED /* UIViewController+FJCurrentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309498311F6FC8C100C565ED /* UIViewController+FJCurrentViewController.m */; };
 		309498A61F6FC8C100C565ED /* default_avatar_geren_134@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 309498801F6FC8C100C565ED /* default_avatar_geren_134@2x.png */; };
 		309498A71F6FC8C100C565ED /* default_avatar_geren_134@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 309498811F6FC8C100C565ED /* default_avatar_geren_134@3x.png */; };
 		309498AA1F6FC90E00C565ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309498A91F6FC90E00C565ED /* ViewController.m */; };
@@ -31,7 +31,6 @@
 		309498F91F6FCACB00C565ED /* FJImageBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 309498F11F6FCACB00C565ED /* FJImageBrowserView.m */; };
 		309498FA1F6FCACB00C565ED /* FJImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 309498F31F6FCACB00C565ED /* FJImageModel.m */; };
 		309498FB1F6FCACB00C565ED /* FJShapeCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 309498F51F6FCACB00C565ED /* FJShapeCircleView.m */; };
-		309498FC1F6FCACB00C565ED /* TMMuiLazyScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 309498F71F6FCACB00C565ED /* TMMuiLazyScrollView.m */; };
 		FA9E5F7927EE4C7B3C522A5F /* Pods_FJImageBrowserDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C064DCBA6FF026A5602C153B /* Pods_FJImageBrowserDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +54,10 @@
 /* Begin PBXFileReference section */
 		306E5FE61F8EFC1500012683 /* UIViewController+LifeCircle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LifeCircle.h"; sourceTree = "<group>"; };
 		306E5FE71F8EFC1500012683 /* UIViewController+LifeCircle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LifeCircle.m"; sourceTree = "<group>"; };
+		306E5FEC1F8F1A4500012683 /* UIView+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		306E5FED1F8F1A4500012683 /* UIViewController+FJCurrentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+FJCurrentViewController.h"; sourceTree = "<group>"; };
+		306E5FEE1F8F1A4600012683 /* UIView+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		306E5FEF1F8F1A4600012683 /* UIViewController+FJCurrentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+FJCurrentViewController.m"; sourceTree = "<group>"; };
 		30883EB21F70C88C00019D3A /* imageBrowser.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = imageBrowser.gif; sourceTree = "<group>"; };
 		30883EB31F70C88C00019D3A /* imageBrowserLandscape.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = imageBrowserLandscape.gif; sourceTree = "<group>"; };
 		30883EB41F70C88C00019D3A /* imageBrowserPortrait.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = imageBrowserPortrait.gif; sourceTree = "<group>"; };
@@ -72,10 +75,6 @@
 		309498181F6FC7B400C565ED /* FJImageBrowserDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FJImageBrowserDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3094981C1F6FC7B400C565ED /* FJImageBrowserDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FJImageBrowserDemoUITests.m; sourceTree = "<group>"; };
 		3094981E1F6FC7B400C565ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3094982E1F6FC8C100C565ED /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
-		3094982F1F6FC8C100C565ED /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
-		309498301F6FC8C100C565ED /* UIViewController+FJCurrentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+FJCurrentViewController.h"; sourceTree = "<group>"; };
-		309498311F6FC8C100C565ED /* UIViewController+FJCurrentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+FJCurrentViewController.m"; sourceTree = "<group>"; };
 		309498801F6FC8C100C565ED /* default_avatar_geren_134@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default_avatar_geren_134@2x.png"; sourceTree = "<group>"; };
 		309498811F6FC8C100C565ED /* default_avatar_geren_134@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default_avatar_geren_134@3x.png"; sourceTree = "<group>"; };
 		309498A81F6FC90E00C565ED /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -97,8 +96,6 @@
 		309498F31F6FCACB00C565ED /* FJImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJImageModel.m; sourceTree = "<group>"; };
 		309498F41F6FCACB00C565ED /* FJShapeCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJShapeCircleView.h; sourceTree = "<group>"; };
 		309498F51F6FCACB00C565ED /* FJShapeCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJShapeCircleView.m; sourceTree = "<group>"; };
-		309498F61F6FCACB00C565ED /* TMMuiLazyScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMMuiLazyScrollView.h; sourceTree = "<group>"; };
-		309498F71F6FCACB00C565ED /* TMMuiLazyScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMMuiLazyScrollView.m; sourceTree = "<group>"; };
 		697B419F4D223A6592FD01AD /* Pods-FJImageBrowserDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FJImageBrowserDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FJImageBrowserDemo/Pods-FJImageBrowserDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		9857144AB6262451F235B505 /* Pods-FJImageBrowserDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FJImageBrowserDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FJImageBrowserDemo/Pods-FJImageBrowserDemo.release.xcconfig"; sourceTree = "<group>"; };
 		C064DCBA6FF026A5602C153B /* Pods_FJImageBrowserDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FJImageBrowserDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -219,21 +216,9 @@
 			isa = PBXGroup;
 			children = (
 				309498EB1F6FCACB00C565ED /* FJImageBrowserInfo */,
-				3094982B1F6FC8C100C565ED /* Category */,
 				3094987F1F6FC8C100C565ED /* Resourse */,
 			);
 			path = FJImageBrowser;
-			sourceTree = "<group>";
-		};
-		3094982B1F6FC8C100C565ED /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				3094982E1F6FC8C100C565ED /* UIView+Extension.h */,
-				3094982F1F6FC8C100C565ED /* UIView+Extension.m */,
-				309498301F6FC8C100C565ED /* UIViewController+FJCurrentViewController.h */,
-				309498311F6FC8C100C565ED /* UIViewController+FJCurrentViewController.m */,
-			);
-			path = Category;
 			sourceTree = "<group>";
 		};
 		3094987F1F6FC8C100C565ED /* Resourse */ = {
@@ -248,6 +233,10 @@
 		309498EB1F6FCACB00C565ED /* FJImageBrowserInfo */ = {
 			isa = PBXGroup;
 			children = (
+				306E5FEE1F8F1A4600012683 /* UIView+Extension.h */,
+				306E5FEC1F8F1A4500012683 /* UIView+Extension.m */,
+				306E5FED1F8F1A4500012683 /* UIViewController+FJCurrentViewController.h */,
+				306E5FEF1F8F1A4600012683 /* UIViewController+FJCurrentViewController.m */,
 				309498EC1F6FCACB00C565ED /* FJImageBrowser.h */,
 				309498EF1F6FCACB00C565ED /* FJImageBrowserMacro.h */,
 				309498F21F6FCACB00C565ED /* FJImageModel.h */,
@@ -256,8 +245,6 @@
 				309498F51F6FCACB00C565ED /* FJShapeCircleView.m */,
 				309498F01F6FCACB00C565ED /* FJImageBrowserView.h */,
 				309498F11F6FCACB00C565ED /* FJImageBrowserView.m */,
-				309498F61F6FCACB00C565ED /* TMMuiLazyScrollView.h */,
-				309498F71F6FCACB00C565ED /* TMMuiLazyScrollView.m */,
 				309498ED1F6FCACB00C565ED /* FJImageBrowserPhotoView.h */,
 				309498EE1F6FCACB00C565ED /* FJImageBrowserPhotoView.m */,
 			);
@@ -474,18 +461,17 @@
 			files = (
 				309498B41F6FC91900C565ED /* FJCollectionImageViewCell.m in Sources */,
 				309498AA1F6FC90E00C565ED /* ViewController.m in Sources */,
+				306E5FF01F8F1A4600012683 /* UIView+Extension.m in Sources */,
 				309498F91F6FCACB00C565ED /* FJImageBrowserView.m in Sources */,
-				309498831F6FC8C100C565ED /* UIView+Extension.m in Sources */,
 				309498B31F6FC91900C565ED /* ChatTableViewCell.m in Sources */,
-				309498841F6FC8C100C565ED /* UIViewController+FJCurrentViewController.m in Sources */,
 				309498B21F6FC91900C565ED /* ChatViewController.m in Sources */,
 				309497FC1F6FC7B400C565ED /* AppDelegate.m in Sources */,
 				306E5FE81F8EFC1500012683 /* UIViewController+LifeCircle.m in Sources */,
 				309497F91F6FC7B400C565ED /* main.m in Sources */,
-				309498FC1F6FCACB00C565ED /* TMMuiLazyScrollView.m in Sources */,
 				309498FB1F6FCACB00C565ED /* FJShapeCircleView.m in Sources */,
 				309498F81F6FCACB00C565ED /* FJImageBrowserPhotoView.m in Sources */,
 				309498FA1F6FCACB00C565ED /* FJImageModel.m in Sources */,
+				306E5FF11F8F1A4600012683 /* UIViewController+FJCurrentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
