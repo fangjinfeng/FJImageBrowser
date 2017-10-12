@@ -9,7 +9,7 @@
 
 #import "FJImageBrowser.h"
 #import "ViewController.h"
-#import "UIView+Extension.h"
+#import "UIView+FJExtension.h"
 #import "UIImageView+WebCache.h"
 #import "FJCollectionImageViewCell.h"
 

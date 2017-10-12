@@ -8,7 +8,7 @@
 //
 
 #import "FJImageBrowser.h"
-#import "UIView+Extension.h"
+#import "UIView+FJExtension.h"
 #import "FJShapeCircleView.h"
 #import "UIImageView+WebCache.h"
 #import "FJImageBrowserPhotoView.h"

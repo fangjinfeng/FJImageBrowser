@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 Qingning Science & Technology Development Co.,Ltd. All rights reserved.
 //
 
-#import "UIView+Extension.h"
+#import "UIView+FJExtension.h"
 
-@implementation UIView (Extension)
+@implementation UIView (FJExtension)
 
 - (void)setX:(CGFloat)x
 {

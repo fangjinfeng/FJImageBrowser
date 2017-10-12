@@ -1,6 +1,0 @@
-framework module LazyScrollView {
-  umbrella header "LazyScrollView-umbrella.h"
-
-  export *
-  module * { export * }
-}

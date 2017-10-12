@@ -8,8 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		306E5FE81F8EFC1500012683 /* UIViewController+LifeCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 306E5FE71F8EFC1500012683 /* UIViewController+LifeCircle.m */; };
-		306E5FF01F8F1A4600012683 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 306E5FEC1F8F1A4500012683 /* UIView+Extension.m */; };
+		306E5FF01F8F1A4600012683 /* UIView+FJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 306E5FEC1F8F1A4500012683 /* UIView+FJExtension.m */; };
 		306E5FF11F8F1A4600012683 /* UIViewController+FJCurrentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 306E5FEF1F8F1A4600012683 /* UIViewController+FJCurrentViewController.m */; };
+		306E5FF41F8F3C0800012683 /* TMMuiLazyScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 306E5FF31F8F3C0800012683 /* TMMuiLazyScrollView.m */; };
+		306E5FF51F8F3C3100012683 /* TMMuiLazyScrollView.h in Sources */ = {isa = PBXBuildFile; fileRef = 306E5FF21F8F3C0700012683 /* TMMuiLazyScrollView.h */; };
+		306E5FF61F8F3C5A00012683 /* UIView+FJExtension.h in Sources */ = {isa = PBXBuildFile; fileRef = 306E5FEE1F8F1A4600012683 /* UIView+FJExtension.h */; };
+		306E5FF71F8F3C6300012683 /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 309497FA1F6FC7B400C565ED /* AppDelegate.h */; };
 		30883EB51F70C88C00019D3A /* imageBrowser.gif in Resources */ = {isa = PBXBuildFile; fileRef = 30883EB21F70C88C00019D3A /* imageBrowser.gif */; };
 		30883EB61F70C88C00019D3A /* imageBrowserLandscape.gif in Resources */ = {isa = PBXBuildFile; fileRef = 30883EB31F70C88C00019D3A /* imageBrowserLandscape.gif */; };
 		30883EB71F70C88C00019D3A /* imageBrowserPortrait.gif in Resources */ = {isa = PBXBuildFile; fileRef = 30883EB41F70C88C00019D3A /* imageBrowserPortrait.gif */; };
@@ -54,10 +58,12 @@
 /* Begin PBXFileReference section */
 		306E5FE61F8EFC1500012683 /* UIViewController+LifeCircle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LifeCircle.h"; sourceTree = "<group>"; };
 		306E5FE71F8EFC1500012683 /* UIViewController+LifeCircle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LifeCircle.m"; sourceTree = "<group>"; };
-		306E5FEC1F8F1A4500012683 /* UIView+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		306E5FEC1F8F1A4500012683 /* UIView+FJExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+FJExtension.m"; sourceTree = "<group>"; };
 		306E5FED1F8F1A4500012683 /* UIViewController+FJCurrentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+FJCurrentViewController.h"; sourceTree = "<group>"; };
-		306E5FEE1F8F1A4600012683 /* UIView+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		306E5FEE1F8F1A4600012683 /* UIView+FJExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+FJExtension.h"; sourceTree = "<group>"; };
 		306E5FEF1F8F1A4600012683 /* UIViewController+FJCurrentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+FJCurrentViewController.m"; sourceTree = "<group>"; };
+		306E5FF21F8F3C0700012683 /* TMMuiLazyScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMMuiLazyScrollView.h; sourceTree = "<group>"; };
+		306E5FF31F8F3C0800012683 /* TMMuiLazyScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMMuiLazyScrollView.m; sourceTree = "<group>"; };
 		30883EB21F70C88C00019D3A /* imageBrowser.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = imageBrowser.gif; sourceTree = "<group>"; };
 		30883EB31F70C88C00019D3A /* imageBrowserLandscape.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = imageBrowserLandscape.gif; sourceTree = "<group>"; };
 		30883EB41F70C88C00019D3A /* imageBrowserPortrait.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = imageBrowserPortrait.gif; sourceTree = "<group>"; };
@@ -233,8 +239,8 @@
 		309498EB1F6FCACB00C565ED /* FJImageBrowserInfo */ = {
 			isa = PBXGroup;
 			children = (
-				306E5FEE1F8F1A4600012683 /* UIView+Extension.h */,
-				306E5FEC1F8F1A4500012683 /* UIView+Extension.m */,
+				306E5FEE1F8F1A4600012683 /* UIView+FJExtension.h */,
+				306E5FEC1F8F1A4500012683 /* UIView+FJExtension.m */,
 				306E5FED1F8F1A4500012683 /* UIViewController+FJCurrentViewController.h */,
 				306E5FEF1F8F1A4600012683 /* UIViewController+FJCurrentViewController.m */,
 				309498EC1F6FCACB00C565ED /* FJImageBrowser.h */,
@@ -245,6 +251,8 @@
 				309498F51F6FCACB00C565ED /* FJShapeCircleView.m */,
 				309498F01F6FCACB00C565ED /* FJImageBrowserView.h */,
 				309498F11F6FCACB00C565ED /* FJImageBrowserView.m */,
+				306E5FF21F8F3C0700012683 /* TMMuiLazyScrollView.h */,
+				306E5FF31F8F3C0800012683 /* TMMuiLazyScrollView.m */,
 				309498ED1F6FCACB00C565ED /* FJImageBrowserPhotoView.h */,
 				309498EE1F6FCACB00C565ED /* FJImageBrowserPhotoView.m */,
 			);
@@ -459,10 +467,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				306E5FF71F8F3C6300012683 /* AppDelegate.h in Sources */,
+				306E5FF61F8F3C5A00012683 /* UIView+FJExtension.h in Sources */,
+				306E5FF51F8F3C3100012683 /* TMMuiLazyScrollView.h in Sources */,
 				309498B41F6FC91900C565ED /* FJCollectionImageViewCell.m in Sources */,
 				309498AA1F6FC90E00C565ED /* ViewController.m in Sources */,
-				306E5FF01F8F1A4600012683 /* UIView+Extension.m in Sources */,
+				306E5FF01F8F1A4600012683 /* UIView+FJExtension.m in Sources */,
 				309498F91F6FCACB00C565ED /* FJImageBrowserView.m in Sources */,
+				306E5FF41F8F3C0800012683 /* TMMuiLazyScrollView.m in Sources */,
 				309498B31F6FC91900C565ED /* ChatTableViewCell.m in Sources */,
 				309498B21F6FC91900C565ED /* ChatViewController.m in Sources */,
 				309497FC1F6FC7B400C565ED /* AppDelegate.m in Sources */,

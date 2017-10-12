@@ -1,17 +1,14 @@
 PODS:
-  - LazyScrollView (1.0.0)
   - SDWebImage (4.1.0):
     - SDWebImage/Core (= 4.1.0)
   - SDWebImage/Core (4.1.0)
 
 DEPENDENCIES:
-  - LazyScrollView (~> 1.0.0)
   - SDWebImage (~> 4.1.0)
 
 SPEC CHECKSUMS:
-  LazyScrollView: 739c176d931ad11348052ae8984e18ac8ed9680a
   SDWebImage: 0e435c14e402a6730315a0fb79f95e68654d55a4
 
-PODFILE CHECKSUM: a7fa8e0b6d4d2bce0f3e20f8feb8a716d0d595a5
+PODFILE CHECKSUM: 4a77435fa33b2459635bc27e12c37a838fcb42dc
 
 COCOAPODS: 1.1.1

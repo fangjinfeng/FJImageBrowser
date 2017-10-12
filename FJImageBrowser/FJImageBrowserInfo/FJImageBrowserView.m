@@ -8,14 +8,14 @@
 
 
 #import "FJImageModel.h"
-#import "UIView+Extension.h"
+#import "UIView+FJExtension.h"
 #import "FJImageBrowserView.h"
-#import "LazyScrollView.h"
+#import "TMMuiLazyScrollView.h"
 #import "FJImageBrowserPhotoView.h"
 #import "UIViewController+FJCurrentViewController.h"
 
 
-@interface FJImageBrowserView()<LazyScrollViewDataSource, UIScrollViewDelegate>
+@interface FJImageBrowserView()<TMMuiLazyScrollViewDataSource, UIScrollViewDelegate>
 
 // 是否 为 第一次 显示
 @property (nonatomic, assign) BOOL isFirstShowBrowser;
@@ -33,7 +33,7 @@
 @property (nonatomic, assign) BOOL isHiddenStatusBar;
 
 // 浏览器 scrollView
-@property (nonatomic, strong) LazyScrollView *photoBrowserScrollView;
+@property (nonatomic, strong) TMMuiLazyScrollView *photoBrowserScrollView;
 @end
 
 @implementation FJImageBrowserView
@@ -162,26 +162,26 @@
 
 /************************** UICollectionView Delegate *****************************/
 
-- (NSUInteger)numberOfItemInScrollView:(LazyScrollView *)scrollView
+- (NSUInteger)numberOfItemInScrollView:(TMMuiLazyScrollView *)scrollView
 {
 
     return self.photoModeArray.count;
 }
 
-- (LSVRectModel *)scrollView:(LazyScrollView *)scrollView rectModelAtIndex:(NSUInteger)index
+- (TMMuiRectModel *)scrollView:(TMMuiLazyScrollView *)scrollView rectModelAtIndex:(NSUInteger)index
 {
-    LSVRectModel *rectModel = [[LSVRectModel alloc]init];
-    rectModel.absRect = CGRectMake(index * self.photoBrowserScrollView.width, 0, self.photoBrowserScrollView.width, self.view.frame.size.height);
-    rectModel.lsvId = [NSString stringWithFormat:@"%ld",index];
+    TMMuiRectModel *rectModel = [[TMMuiRectModel alloc]init];
+    rectModel.absoluteRect = CGRectMake(index * self.photoBrowserScrollView.width, 0, self.photoBrowserScrollView.width, self.view.frame.size.height);
+    rectModel.muiID = [NSString stringWithFormat:@"%ld",index];
     return rectModel;
 }
 
 
-- (UIView *)scrollView:(LazyScrollView *)scrollView itemByLsvId:(NSString *)lsvId
+- (nullable UIView *)scrollView:(nonnull TMMuiLazyScrollView *)scrollView itemByMuiID:(nonnull NSString *)muiID;
 {
    
     FJImageBrowserPhotoView *cell = (FJImageBrowserPhotoView *)[scrollView dequeueReusableItemWithIdentifier:@"FJImageBrowserPhotoView"];
-    NSInteger index = [lsvId integerValue];
+    NSInteger index = [muiID integerValue];
     if (!cell) {
         cell = [[FJImageBrowserPhotoView alloc] init];
 
@@ -319,9 +319,9 @@
 
 
 // 浏览器 scrollView
-- (LazyScrollView *)photoBrowserScrollView {
+- (TMMuiLazyScrollView *)photoBrowserScrollView {
     if (!_photoBrowserScrollView) {
-        _photoBrowserScrollView = [[LazyScrollView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width + [self getCellSpacing], [[UIScreen mainScreen] bounds].size.height)];
+        _photoBrowserScrollView = [[TMMuiLazyScrollView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width + [self getCellSpacing], [[UIScreen mainScreen] bounds].size.height)];
         _photoBrowserScrollView.pagingEnabled = YES;
         _photoBrowserScrollView.showsVerticalScrollIndicator = NO;
         _photoBrowserScrollView.showsHorizontalScrollIndicator = NO;

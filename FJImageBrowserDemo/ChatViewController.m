@@ -7,7 +7,7 @@
 //
 
 #import "FJImageModel.h"
-#import "UIView+Extension.h"
+#import "UIView+FJExtension.h"
 #import "FJImageBrowserView.h"
 #import "ChatViewController.h"
 #import "ChatTableViewCell.h"
