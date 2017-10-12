@@ -7,7 +7,6 @@
 //  Copyright © 2017年 fjf. All rights reserved.
 //
 
-#import "AppDelegate.h"
 #import "FJImageBrowser.h"
 #import "UIView+Extension.h"
 #import "FJShapeCircleView.h"

@@ -176,11 +176,12 @@
     return rectModel;
 }
 
-- (UIView *)scrollView:(LazyScrollView *)scrollView itemByMuiID:(NSString *)muiID
+
+- (UIView *)scrollView:(LazyScrollView *)scrollView itemByLsvId:(NSString *)lsvId
 {
    
     FJImageBrowserPhotoView *cell = (FJImageBrowserPhotoView *)[scrollView dequeueReusableItemWithIdentifier:@"FJImageBrowserPhotoView"];
-    NSInteger index = [muiID integerValue];
+    NSInteger index = [lsvId integerValue];
     if (!cell) {
         cell = [[FJImageBrowserPhotoView alloc] init];
 
@@ -325,6 +326,7 @@
         _photoBrowserScrollView.showsVerticalScrollIndicator = NO;
         _photoBrowserScrollView.showsHorizontalScrollIndicator = NO;
         _photoBrowserScrollView.dataSource = self;
+        _photoBrowserScrollView.delegate = self;
     }
     return _photoBrowserScrollView;
 }
