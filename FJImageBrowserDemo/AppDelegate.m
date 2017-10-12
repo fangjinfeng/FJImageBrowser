@@ -57,5 +57,29 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (UIInterfaceOrientationMask)interfaceOrientationMask {
+    
+    switch (self.viewControllerRotateType) {
+        case FJViewControllerRotateTypeOfDefault:
+            return UIInterfaceOrientationMaskPortrait;
+            break;
+        case FJViewControllerRotateTypeOfAll:
+             return UIInterfaceOrientationMaskAll;
+            break;
+        case FJViewControllerRotateTypeOfPortrait:
+             return UIInterfaceOrientationMaskPortrait;
+            break;
+        case FJViewControllerRotateTypeOfPortraitAndLandscape:
+             return UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskLandscapeRight | UIInterfaceOrientationMaskLandscapeLeft;
+            break;
+        default:
+            break;
+    }
+}
+
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(nullable UIWindow *)window {
+    return [self interfaceOrientationMask];
+}
+
 
 @end

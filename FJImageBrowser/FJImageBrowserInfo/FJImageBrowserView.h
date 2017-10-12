@@ -12,6 +12,12 @@
 @class FJImageModel;
 @class FJImageBrowserView;
 
+
+
+@protocol FJViewControllerRotateProtocol <NSObject>
+
+@end
+
 @protocol FJImageBrowserViewDelegate <NSObject>
 
 @optional
@@ -37,7 +43,7 @@
 @end
 
 
-@interface FJImageBrowserView : UIViewController
+@interface FJImageBrowserView : UIViewController<FJViewControllerRotateProtocol>
 
 /**
  选中第几张(必传)

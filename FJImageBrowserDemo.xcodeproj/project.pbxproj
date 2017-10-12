@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		306E5FE81F8EFC1500012683 /* UIViewController+LifeCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 306E5FE71F8EFC1500012683 /* UIViewController+LifeCircle.m */; };
 		30883EB51F70C88C00019D3A /* imageBrowser.gif in Resources */ = {isa = PBXBuildFile; fileRef = 30883EB21F70C88C00019D3A /* imageBrowser.gif */; };
 		30883EB61F70C88C00019D3A /* imageBrowserLandscape.gif in Resources */ = {isa = PBXBuildFile; fileRef = 30883EB31F70C88C00019D3A /* imageBrowserLandscape.gif */; };
 		30883EB71F70C88C00019D3A /* imageBrowserPortrait.gif in Resources */ = {isa = PBXBuildFile; fileRef = 30883EB41F70C88C00019D3A /* imageBrowserPortrait.gif */; };
@@ -17,7 +18,6 @@
 		309498071F6FC7B400C565ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 309498051F6FC7B400C565ED /* LaunchScreen.storyboard */; };
 		309498121F6FC7B400C565ED /* FJImageBrowserDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 309498111F6FC7B400C565ED /* FJImageBrowserDemoTests.m */; };
 		3094981D1F6FC7B400C565ED /* FJImageBrowserDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3094981C1F6FC7B400C565ED /* FJImageBrowserDemoUITests.m */; };
-		309498821F6FC8C100C565ED /* AppDelegate+InterfaceOrientations.m in Sources */ = {isa = PBXBuildFile; fileRef = 3094982D1F6FC8C100C565ED /* AppDelegate+InterfaceOrientations.m */; };
 		309498831F6FC8C100C565ED /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3094982F1F6FC8C100C565ED /* UIView+Extension.m */; };
 		309498841F6FC8C100C565ED /* UIViewController+FJCurrentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309498311F6FC8C100C565ED /* UIViewController+FJCurrentViewController.m */; };
 		309498A61F6FC8C100C565ED /* default_avatar_geren_134@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 309498801F6FC8C100C565ED /* default_avatar_geren_134@2x.png */; };
@@ -53,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		306E5FE61F8EFC1500012683 /* UIViewController+LifeCircle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LifeCircle.h"; sourceTree = "<group>"; };
+		306E5FE71F8EFC1500012683 /* UIViewController+LifeCircle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LifeCircle.m"; sourceTree = "<group>"; };
 		30883EB21F70C88C00019D3A /* imageBrowser.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = imageBrowser.gif; sourceTree = "<group>"; };
 		30883EB31F70C88C00019D3A /* imageBrowserLandscape.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = imageBrowserLandscape.gif; sourceTree = "<group>"; };
 		30883EB41F70C88C00019D3A /* imageBrowserPortrait.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = imageBrowserPortrait.gif; sourceTree = "<group>"; };
@@ -70,8 +72,6 @@
 		309498181F6FC7B400C565ED /* FJImageBrowserDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FJImageBrowserDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3094981C1F6FC7B400C565ED /* FJImageBrowserDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FJImageBrowserDemoUITests.m; sourceTree = "<group>"; };
 		3094981E1F6FC7B400C565ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3094982C1F6FC8C100C565ED /* AppDelegate+InterfaceOrientations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+InterfaceOrientations.h"; sourceTree = "<group>"; };
-		3094982D1F6FC8C100C565ED /* AppDelegate+InterfaceOrientations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+InterfaceOrientations.m"; sourceTree = "<group>"; };
 		3094982E1F6FC8C100C565ED /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		3094982F1F6FC8C100C565ED /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		309498301F6FC8C100C565ED /* UIViewController+FJCurrentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+FJCurrentViewController.h"; sourceTree = "<group>"; };
@@ -175,6 +175,8 @@
 				309498AC1F6FC91900C565ED /* ChatViewController.m */,
 				309498AD1F6FC91900C565ED /* ChatTableViewCell.h */,
 				309498AE1F6FC91900C565ED /* ChatTableViewCell.m */,
+				306E5FE61F8EFC1500012683 /* UIViewController+LifeCircle.h */,
+				306E5FE71F8EFC1500012683 /* UIViewController+LifeCircle.m */,
 				309498AF1F6FC91900C565ED /* FJCollectionImageViewCell.h */,
 				309498B01F6FC91900C565ED /* FJCollectionImageViewCell.m */,
 				309498B11F6FC91900C565ED /* FJCollectionImageViewCell.xib */,
@@ -226,8 +228,6 @@
 		3094982B1F6FC8C100C565ED /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				3094982C1F6FC8C100C565ED /* AppDelegate+InterfaceOrientations.h */,
-				3094982D1F6FC8C100C565ED /* AppDelegate+InterfaceOrientations.m */,
 				3094982E1F6FC8C100C565ED /* UIView+Extension.h */,
 				3094982F1F6FC8C100C565ED /* UIView+Extension.m */,
 				309498301F6FC8C100C565ED /* UIViewController+FJCurrentViewController.h */,
@@ -477,10 +477,10 @@
 				309498F91F6FCACB00C565ED /* FJImageBrowserView.m in Sources */,
 				309498831F6FC8C100C565ED /* UIView+Extension.m in Sources */,
 				309498B31F6FC91900C565ED /* ChatTableViewCell.m in Sources */,
-				309498821F6FC8C100C565ED /* AppDelegate+InterfaceOrientations.m in Sources */,
 				309498841F6FC8C100C565ED /* UIViewController+FJCurrentViewController.m in Sources */,
 				309498B21F6FC91900C565ED /* ChatViewController.m in Sources */,
 				309497FC1F6FC7B400C565ED /* AppDelegate.m in Sources */,
+				306E5FE81F8EFC1500012683 /* UIViewController+LifeCircle.m in Sources */,
 				309497F91F6FC7B400C565ED /* main.m in Sources */,
 				309498FC1F6FCACB00C565ED /* TMMuiLazyScrollView.m in Sources */,
 				309498FB1F6FCACB00C565ED /* FJShapeCircleView.m in Sources */,

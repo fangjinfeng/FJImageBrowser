@@ -12,7 +12,6 @@
 #import "FJImageBrowserView.h"
 #import "TMMuiLazyScrollView.h"
 #import "FJImageBrowserPhotoView.h"
-#import "AppDelegate+InterfaceOrientations.h"
 #import "UIViewController+FJCurrentViewController.h"
 
 
@@ -52,10 +51,6 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    if (self.isForbidLandscape == NO) {
-        AppDelegate * app = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-        app.viewControllerRotateType = FJViewControllerRotateTypeOfPortraitAndLandscape;
-    }
     [self setStatusBarHiddenStatus:YES];
 }
 
@@ -68,8 +63,6 @@
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
-    AppDelegate * app = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    app.viewControllerRotateType = FJViewControllerRotateTypeOfPortrait;
 }
 
 

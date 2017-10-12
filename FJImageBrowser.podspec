@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FJImageBrowser"
-  s.version      = "0.0.1"
+  s.version      = "1.0.0"
   s.summary      = "图片浏览器 :支持上下拖动、横竖屏旋转、进行内存优化、支持加载过程先居中，加载完成后放大和直接放大两种效果"
   s.homepage     = "http://www.jianshu.com/p/bea2bfed3f3f"
  s.license      = { :type => 'MIT', :file => 'LICENSE' }
