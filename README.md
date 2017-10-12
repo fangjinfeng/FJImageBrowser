@@ -4,6 +4,11 @@
 
 图片浏览器 :上下拖动、横竖屏旋转、支持加载过程先居中，加载完成后放大和直接放大两种效果、支持本地图片和网络图片自动判断。
 
+# 集成方法
+
+1. 静态：手动将``FJImageBrowser``文件夹拖入到工程中。
+2. 动态：``CocoaPods：pod 'FJImageBrowser', '~> 1.0.0``。
+
 效果图:
 
 ![imageBrowserPortrait](https://github.com/fangjinfeng/FJImageBrowser/blob/master/FJImageBrowserDemo/Snapshots/imageBrowserPortrait.gif)
